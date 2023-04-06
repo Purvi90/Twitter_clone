@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Font Awesome/all.min.css" />
+    <link rel="stylesheet" href="dist.css" />
+  </head>
+  <body class="bg-white dark:bg-dim-900">
+    <div class="container mx-auto h-screen flex xl:max-w-[1200px]">
+      <!-- Left -->
+      <div class="hidden md:flex xl:w-1/5 w-20 h-full flex-col xl:pr-4">
+        <a href="#" class="flex link-active my-2">
+          <i class="fa-brands fa-twitter text-4xl"></i>
+        </a>
+        <!-- Nav -->
+        <nav class="mt-5">
+          <a href="#" class="flex link-active mb-8">
+            <i class="fa-solid fa-house text-xl"></i>
+            <span class="icon">Home</span>
+          </a>
+          <a href="#" class="link">
+            <i class="fa-solid fa-hashtag text-xl"></i>
+            <span class="icon">Explore</span>
+          </a>
+          <a href="#" class="link">
+            <i class="fa-solid fa-bell text-xl"></i>
+            <span class="icon">Notifications</span>
+          </a>
+          <a href="#" class="link">
+            <i class="fa-solid fa-envelope text-xl"></i>
+            <span class="icon">Messages</span>
+          </a>
+          <a href="#" class="link">
+            <i class="fa-solid fa-bookmark text-xl"></i>
+            <span class="icon">Bookmarks</span>
+          </a>
+          <a href="#" class="link">
+            <i class="fa-solid fa-list-ul text-xl"></i>
+            <span class="icon">List</span>
+          </a>
+          <a href="#" class="link">
+            <i class="fa-solid fa-user text-xl"></i>
+            <span class="icon">Profile</span>
+          </a>
+          <a
+            href="javascript:void(0)"
+            class="link"
+            onclick="document.querySelector('html').classList.toggle('dark')"
+          >
+            <i class="fa-solid fa-lightbulb"></i>
+            <span class="icon">Change Mode</span>
+          </a>
+          <a href="#" class="link">
+            <i class="fa-solid fa-ellipsis text-xl"></i>
+            <span class="icon">More</span>
+          </a>
+        </nav>
+        <!-- tweets Button -->
+        <a href="#" class="btn">
+          <i class="fa-solid fa-feather text-xl block xl:hidden"></i>
+          <span class="icon xl:ml-0">tweets</span>
+        </a>
+        <!-- User ACC -->
+        <div class="user">
+          <img class="w-10 h-10 rounded-full" src="images/avatars.jpeg" />
+          <div class="hidden xl:flex flex-col">
+            <h4 class="text-gray-800 dark:text-white font-bold text-sm">
+              <a href="https://github.com/Bashar-Omar" target="_blank"
+                >Bashar Omar</a
+              >
+            </h4>
+            <p class="text-gray-400 text-sm">
+              <a href="https://github.com/Bashar-Omar" target="_blank"
+                >@bashar-omar</a
+              >
+            </p>
+          </div>
+          <i
+            class="fa-solid fa-chevron-down text-xs hidden xl:flex items-center xl:ml-4 text-gray-800 dark:text-white"
+          ></i>
+        </div>
+      </div>
+      <!-- Middle -->
+      <div class="w-full xl:w-1/2 h-screen overflow-y-auto">
+        <div class="sticky-menu">
+          <h4>Home</h4>
+          <i
+            class="fa-brands fa-twitter text-lg text-blue-400 cursor-pointer"
+          ></i>
+        </div>
+        <div class="border pb-3 border-gray-200 dark:border-dim-200">
+          <div class="flex p-4">
+            <img
+              class="w-10 h-10 rounded-full"
+              src="images/avatars.jpeg"
+              alt=""
+            />
+            <textarea
+              class="p-2 dark:text-white text-gray-900 w-full h-16 bg-transparent focus:outline-none resize-none"
+              placeholder="What's happening"
+            ></textarea>
+          </div>
+          <div class="flex w-full p-4">
+            <a href="#" class="icon-tweets">
+              <i
+                class="fa-solid fa-image text-lg transition duration-300 ease-in-out"
+              ></i>
+            </a>
+            <a href="#" class="icon-tweets">
+              <i
+                class="fa-brands fa-git text-lg transition duration-300 ease-in-out"
+              ></i>
+            </a>
+            <a href="#" class="icon-tweets">
+              <i
+                class="fa-solid fa-square-poll-horizontal text-lg transition duration-300 ease-in-out"
+              ></i>
+            </a>
+            <a href="#" class="icon-tweets">
+              <i
+                class="fa-solid fa-face-smile text-lg transition duration-300 ease-in-out"
+              ></i>
+            </a>
+            <a href="#" class="icon-tweets">
+              <i
+                class="fa-solid fa-business-time text-lg transition duration-300 ease-in-out"
+              ></i>
+            </a>
+            <a href="#" class="btn-tweets">tweets</a>
+          </div>
+        </div>
+        <div
+          class="text-center py-4 bg-white dark:bg-dim-900 border border-gray-200 dark:border-dim-200 cursor-pointer text-blue-400 text-sm"
+        >
+          Show 9 tweets
+        </div>
+        <div
+          class="border border-gray-200 dark:border-dim-200 cursor-pointer pb-4"
+        >
+          <div class="flex p-4 pb-0">
+            <img class="w-10 h-10 rounded-full" src="images/Osama_Elzero.jpg" />
+            <p
+              class="ml-2 flex flex-shrink-0 items-center font-medium text-gray-800 dark:text-white gap-x-1"
+            >
+              Osama Elzero
+              <svg
+                class="w-4 h-4 mx-auto fill-blue-400"
+                viewBox="0 0 22 22"
+                aria-label="Verified account"
+                role="img"
+                class="r-1cvl2hr r-4qtqp9 r-yyyyoo r-1xvli5t r-f9ja8p r-og9te1 r-bnwqim r-1plcrui r-lrvibr"
+                data-testid="icon-verified"
+              >
+                <g>
+                  <path
+                    d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"
+                  ></path>
+                </g>
+              </svg>
+              <span class="ml-1 text-sm leading-5 text-gray-400"
+                >@Osama_Elzeror . Nov 2</span
+              >
+            </p>
+          </div>
+          <div class="pl-8 xl:pl-16 pr-4">
+            <p class="w-auto text-gray-800 dark:text-white text-right">
+              أول مسار كنت عاوز أبدأ فيه لما فتحت القناه لكن الناس غيرت اللي حصل
+              وبعد ما بدأت كورس ++C الحمد لله هكمل المسار وهشتغل عليه واديله كل
+              وقتي باذن الله بعد ما وفرت وقت كتير في حياتي. الفيديو فيه شرح
+              للمسار كامل على الموقع
+              <br />
+              <br />
+              <a
+                class="text-blue-400"
+                href="https://www.youtube.com/watch?v=YZBSiTjXAjM&feature=youtu.be"
+                target="_blank"
+                >youtu.be/YZBSiTjXAjM</a
+              >
+            </p>
+            <img
+              class="rounded-2xl border border-gray-600 my-3 mr-2 w-full"
+              src="images/img-one.jpeg"
+            />
+            <div class="flex items-center w-full justify-between">
+              <div
+                class="icon-tweet dark:hover:text-blue-400 transition duration-300 ease-in-out"
+              >
+                <i class="fa-solid fa-comment mr-2 text-lg"></i>18.7K
+              </div>
+              <div
+                class="icon-tweet dark:hover:text-green-400 transition duration-300 ease-in-out"
+              >
+                <i class="fa-solid fa-retweet mr-2 text-lg"></i>60.1K
+              </div>
+              <div
+                class="icon-tweet dark:hover:text-red-600 transition duration-300 ease-in-out"
+              >
+                <i class="fa-solid fa-heart mr-2 text-lg"></i>30.5K
+              </div>
+              <div
+                class="icon-tweet dark:hover:text-blue-400 transition duration-300 ease-in-out"
+              >
+                <i class="fa-solid fa-share mr-2 text-lg"></i>5.4K
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border border-gray-200 dark:border-dim-200 cursor-pointer pb-4"
+        >
+          <div class="flex p-4 pb-0">
+            <img class="w-10 h-10 rounded-full" src="images/elon.jpg" />
+            <p
+              class="ml-2 flex flex-shrink-0 items-center font-medium text-gray-800 dark:text-white gap-x-1"
+            >
+              Elon Musk
+              <svg
+                class="w-4 h-4 mx-auto fill-blue-400"
+                viewBox="0 0 22 22"
+                aria-label="Verified account"
+                role="img"
+                class="r-1cvl2hr r-4qtqp9 r-yyyyoo r-1xvli5t r-f9ja8p r-og9te1 r-bnwqim r-1plcrui r-lrvibr"
+                data-testid="icon-verified"
+              >
+                <g>
+                  <path
+                    d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"
+                  ></path>
+                </g>
+              </svg>
+              <span class="ml-1 text-sm leading-5 text-gray-400"
+                >@elonmusk . Nov 9</span
+              >
+            </p>
+          </div>
+          <div class="pl-8 xl:pl-16 pr-4">
+            <img
+              class="rounded-2xl border border-gray-600 my-3 mr-2 w-full"
+              src="images/img-two.jpeg"
+            />
+            <div class="flex items-center w-full justify-between">
+              <div
+                class="icon-tweet dark:hover:text-blue-400 transition duration-300 ease-in-out"
+              >
+                <i class="fa-solid fa-comment mr-2 text-lg"></i>118.7K
+              </div>
+              <div
+                class="icon-tweet dark:hover:text-green-400 transition duration-300 ease-in-out"
+              >
+                <i class="fa-solid fa-retweet mr-2 text-lg"></i>810.1K
+              </div>
+              <div
+                class="icon-tweet dark:hover:text-red-600 transition duration-300 ease-in-out"
+              >
+                <i class="fa-solid fa-heart mr-2 text-lg"></i>330.5K
+              </div>
+              <div
+                class="icon-tweet dark:hover:text-blue-400 transition duration-300 ease-in-out"
+              >
+                <i class="fa-solid fa-share mr-2 text-lg"></i>55.4K
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border border-gray-200 dark:border-dim-200 cursor-pointer pb-4"
+        >
+          <div class="flex p-4 pb-0">
+            <img class="w-10 h-10 rounded-full" src="images/avatars.jpeg" />
+            <p
+              class="ml-2 flex flex-shrink-0 items-center font-medium text-gray-800 dark:text-white"
+            >
+              <a href="https://github.com/Bashar-Omar" target="_blank"
+                >Bashar Omar</a
+              >
+              <span class="ml-1 text-sm leading-5 text-gray-400"
+                ><a href="https://github.com/Bashar-Omar" target="_blank"
+                  >@bashar-omar . Nov 5</a
+                >
+              </span>
+            </p>
+          </div>
+          <div class="pl-8 xl:pl-16 pr-4">
+            <p class="w-auto text-gray-800 dark:text-white">
+              Any fool can write code that a computer can understand. Good
+              programmers write code that humans can understand.<br />
+              <br />
+              Experience is the name everyone gives to their
+              <a href="#" class="text-blue-400">#mistakes</a>
+              <br />
+              <br />
+              Simplicity is the soul of efficiency.
+            </p>
+            <img
+              class="rounded-2xl border border-gray-600 my-3 mr-2 w-full"
+              src="images/Blog-WebGL.jpg"
+            />
+            <div class="flex items-center w-full justify-between">
+              <div
+                class="icon-tweet dark:hover:text-blue-400 transition duration-300 ease-in-out"
+              >
+                <i class="fa-solid fa-comment mr-2 text-lg"></i>14.7K
+              </div>
+              <div
+                class="icon-tweet dark:hover:text-green-400 transition duration-300 ease-in-out"
+              >
+                <i class="fa-solid fa-retweet mr-2 text-lg"></i>72.1K
+              </div>
+              <div
+                class="icon-tweet dark:hover:text-red-600 transition duration-300 ease-in-out"
+              >
+                <i class="fa-solid fa-heart mr-2 text-lg"></i>22.5K
+              </div>
+              <div
+                class="icon-tweet dark:hover:text-blue-400 transition duration-300 ease-in-out"
+              >
+                <i class="fa-solid fa-share mr-2 text-lg"></i>8.4K
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="py-2 border-gray-200 dark:border-dim-200 bg-gray-50 dark:bg-gray-500"
+        >
+          <div
+            class="text-center bg-white dark:bg-dim-900 border-b border-t border-gray-200 dark:border-dim-200 p-5"
+          >
+            <h3 class="dark:text-white text-gray-900 text-2xl font-bold mb-2">
+              Customize Your View
+            </h3>
+            <p class="text-gray-500 mb-5 text-sm">
+              Manage your font size, color and background. These settings affect
+              all the Twitter accounts on this browser.
+            </p>
+            <a
+              href="javascript:void(0)"
+              onclick="document.querySelector('html').classList.toggle('dark')"
+              class="btn-mode"
+            >
+              <i class="fa-solid fa-cloud-moon block xl:hidden text-lg"></i>
+              <span class="hidden xl:block font-bold">Toggle Dark Mode</span>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 border border-gray-200 dark:border-gray-700">
+          <svg class="w-8 h-8 mx-auto animate-spin">
+            <circle
+              cx="16"
+              cy="16"
+              fill="none"
+              r="14"
+              stroke-width="4"
+              style="stroke: rgb(29, 161, 242); opacity: 0.2"
+            ></circle>
+            <circle
+              cx="16"
+              cy="16"
+              fill="none"
+              r="14"
+              stroke-width="4"
+              style="
+                stroke: rgb(29, 161, 242);
+                stroke-dasharray: 80;
+                stroke-dashoffset: 60;
+              "
+            ></circle>
+          </svg>
+        </div>
+      </div>
+      <!-- Right -->
+      <div class="hidden w-[30%] xl:block">
+        <div class="relative m-2">
+          <i
+            class="fa-solid fa-magnifying-glass text-gray-600 absolute left-4 top-1/2 -translate-y-1/2"
+          ></i>
+          <input
+            type="text"
+            class="w-full bg-gray-200 dark:bg-dim-400 border-gray-200 dark:border-dim-400 text-gray-100 focus:outline-none font-normal h-9 pl-12 test-sm rounded-full"
+            placeholder="Search Twitter"
+          />
+        </div>
+        <div class="main-hashtag">
+          <h3>What's happening</h3>
+          <div class="hashtag">
+            <p>Trending in Egypt</p>
+            <h4>#Palestine</h4>
+            <p>64.6K Tweets</p>
+          </div>
+          <div class="hashtag">
+            <h4>#Dogecoin</h4>
+            <p>22K Tweets</p>
+          </div>
+          <div class="hashtag">
+            <p>Trending in Egypt</p>
+            <h4>#incodey</h4>
+            <p>11K Tweets</p>
+          </div>
+          <div class="text-blue-400 p-3 cursor-pointer">Show More</div>
+        </div>
+        <div class="main-follow">
+          <h3>Who To Follow</h3>
+          <div class="follow">
+            <div class="flex">
+              <img src="images/avatars.jpeg" class="w-10 h-10 rounded-full" />
+              <div class="ml-2 text-sm">
+                <h5>
+                  <a href="https://github.com/Bashar-Omar" target="_blank"
+                    >Bashar Omar</a
+                  >
+                </h5>
+                <p>
+                  <a href="https://github.com/Bashar-Omar" target="_blank"
+                    >@bashar-omar</a
+                  >
+                </p>
+              </div>
+            </div>
+            <a href="#" class="follow-btn">Follow</a>
+          </div>
+          <div class="follow">
+            <div class="flex">
+              <img src="images/elon.jpg" class="w-10 h-10 rounded-full" />
+              <div class="ml-2 text-sm flex flex-col">
+                <div class="flex gap-x-1">
+                  <h5>Elon Musk</h5>
+                  <svg
+                    class="w-4 h-4 mx-auto fill-blue-400"
+                    viewBox="0 0 22 22"
+                    aria-label="Verified account"
+                    role="img"
+                    class="r-1cvl2hr r-4qtqp9 r-yyyyoo r-1xvli5t r-f9ja8p r-og9te1 r-bnwqim r-1plcrui r-lrvibr"
+                    data-testid="icon-verified"
+                  >
+                    <g>
+                      <path
+                        d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <p>@elonmusk</p>
+              </div>
+            </div>
+            <a href="#" class="follow-btn">Follow</a>
+          </div>
+          <div class="follow">
+            <div class="flex">
+              <img
+                src="images/Osama_Elzero.jpg"
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="ml-2 text-sm flex flex-col">
+                <div class="flex gap-x-1">
+                  <h5>Osama Elzero</h5>
+                  <svg
+                    class="w-4 h-4 mx-auto fill-blue-400"
+                    viewBox="0 0 22 22"
+                    aria-label="Verified account"
+                    role="img"
+                    class="r-1cvl2hr r-4qtqp9 r-yyyyoo r-1xvli5t r-f9ja8p r-og9te1 r-bnwqim r-1plcrui r-lrvibr"
+                    data-testid="icon-verified"
+                  >
+                    <g>
+                      <path
+                        d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <p>@Osama_Elzero</p>
+              </div>
+            </div>
+            <a href="#" class="follow-btn">Follow</a>
+          </div>
+          <div class="follow-load">
+            <div class="flex gap-x-4 animate-pulse">
+              <div class="rounded-full bg-gray-400 h-12 w-12"></div>
+              <div class="flex-1 space-y-2 py-1">
+                <div class="h-4 bg-gray-400 rounded w-5/6"></div>
+                <div class="h-4 bg-gray-400 rounded w-3/4"></div>
+                <div class="h-4 bg-gray-400 rounded w-4/6"></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-blue-400 p-3 cursor-pointer">Show More</div>
+        </div>
+      </div>
+    </div>
+    <script src="Font Awesome/all.min.js"></script>
+  </body>
+</html>
